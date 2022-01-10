@@ -36,7 +36,6 @@ Button {
   padding-left: 20px;
 }
 
-
 .menu {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
@@ -45,7 +44,7 @@ Button {
   width: 450px;
   height: 40px;
   background: #FFFFFf;
-  margin-top: 20px;
+  margin: 20px 45px 0px 0px;
   cursor: pointer;
 }
 
@@ -81,6 +80,7 @@ Button {
 }
 
 .trans-container {
+  font-family: 'Lato', sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -129,6 +129,10 @@ Button {
     align-items: center;
 }
 
+.tabela h3 {
+  margin-top: 50px;
+}
+
 .titulos {
   width: 100%;
   height: 35px;
@@ -153,4 +157,46 @@ Button {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  border-top: 1px solid #979797;
+  margin-top: 2px;
 }
+
+@media (max-width: 992px) {
+  .trans-container {
+    margin: 30px 20px 0px 25px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .position {
+    flex-direction: column;
+}
+.trans-container {
+  width: 728px;
+  height: 189px;
+}
+
+.trans-container h2 {
+font-size: 18px;
+}
+
+.form {
+  flex-direction: row;
+}
+.form input {
+  width: 200px;
+}
+.form button {
+  position: absolute;
+  top: 41%;
+  left: 67%;
+  width: 200px;
+}
+
+.tabela {
+  margin-left: 0px;
+  margin: 10px
+}
+}
+
