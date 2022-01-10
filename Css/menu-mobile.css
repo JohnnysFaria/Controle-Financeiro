@@ -9,17 +9,25 @@
     padding: .5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
-    margin: 10px;
   }
   [data-menu="button"]::before {
     content: '';
     display: inline-block;
     height: 2px;
-    width: 18px;
+    width: 20px;
     background: #333333;
     box-shadow: 0 4px #333333, 0 -4px #333333;
   }
   .menu {
     display: none;
+  }
+  .menu-container {
+   justify-content: space-between;
+  }
+  .logo img {
+    margin-left: 20px;
+  }
+  .logo h1 {
+    margin-left: 200px;
   }
 }
