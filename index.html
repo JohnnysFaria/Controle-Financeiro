@@ -35,73 +35,92 @@
     </header>
   </section>
 
-  <section>
+  <section class="position">
     <div class="trans-container">
       <h2>Nova Transação</h2>
-      <form action="">
-        <label for="transacao">Tipo de Transação</label>
-        <input name="transacao" id="transacao" type="text" placeholder="Compra">
-
-        <label for="mercadoria">Nome da Mercadoria</label>
-        <input name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
-
-        <label for="valor">Valor</label>
-        <input name="valor" id="valor" type="text" placeholder="R$ 0,00">
-
-        <input type="submit" value="Adicionar Transação">
-      </form>
-    </div>
-  </section>
-
-  <section>
-    <table>
-      <tr>
-        <th>Mercadoria</th>
-        <th>Valor</th>
-      </tr>
-      <tr>
-        <td>Lorem ipsum dolor sit amet consectetur</td>
-        <td>R$ 12.999,99</td>
-      </tr>
-
-      <tr>
-        <td>Quis nostrud exercitation</td>
-        <td>R$ 99,99</td>
-      </tr>
-
-      <tr>
-        <td>Lorem ipsum </td>
-        <td>R$ 9,99</td>
-      </tr>
-
-      <tr>
-        <th>Total</th>
-        <th>R$ 12.909,99</th>
-      </tr>
-
-    </table>
-
-  </section>
-
-
-  <!-- <div class="extrato-container">
-        <h3>Extrato de transações</h3>
-
-        <div class="mercadoria">
-          <p>Mercadoria</p>
-          <span>Lorem ipsum dolor sit amet consectetur</span>
-          <span>Quis nostrud exercitation</span>
-          <span>Lorem ipsum </span>
+      <form class="form">
+        <div>
+          <label for="transacao">Tipo de Transação</label>
+          <input name="transacao" id="transacao" type="text" placeholder="Compra">
         </div>
 
-        <div class="valor">
-          <p>Valor</p>
-          <span>R$ 12.999,99</span>
-          <span>R$ 99,99</span>
-          <span>R$ 9,99</span>
-        </div> -->
+        <div>
+          <label for="mercadoria">Nome da Mercadoria</label>
+          <input name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
+        </div>
 
-  </div>
+        <div>
+          <label for="valor">Valor</label>
+          <input name="valor" id="valor" type="text" placeholder="R$ 0,00">
+        </div>
+
+        <button type="submit">Adicionar Transação</button>
+      </form>
+    </div>
+
+    <div class="tabela">
+      <h3>Extrato de transações</h3>
+      <div class="titulos">
+        <p><strong>Mercadoria</strong> </p>
+        <p>
+        <p><strong>Valor</strong> </p>
+        </p>
+      </div>
+
+
+      <div class="item">
+        <p>+ Lorem ipsum dolor sit amet consectetur</p>
+        <p>R$ 12.999,99</p>
+      </div>
+
+      <div class="item">
+        <p>- Quis nostrud exercitation</p>
+        <p>R$ 99,99</p>
+      </div>
+
+      <div class="item">
+        <p>+ Lorem ipsum </p>
+        <p>R$ 9,99</p>
+      </div>
+
+
+      <div class="total">
+        <p><strong>Total</strong> </p>
+        <p><strong>R$ 12.909,99</strong> </p>
+      </div>
+
+  </section>
+
+
+
+
+  <!-- <table class="teste">
+        <h3>Extrato de transações</h3>
+        <tr>
+          <th>Mercadoria</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>+ Lorem ipsum dolor sit amet consectetur</td>
+          <td>R$ 12.999,99</td>
+        </tr>
+
+        <tr>
+          <td>Quis nostrud exercitation</td>
+          <td>R$ 99,99</td>
+        </tr>
+
+        <tr>
+          <td>Lorem ipsum </td>
+          <td>R$ 9,99</td>
+        </tr>
+
+        <tr>
+          <th>Total</th>
+          <th>R$ 12.909,99</th>
+        </tr>
+
+      </table> -->
 </body>
 
 </html>
