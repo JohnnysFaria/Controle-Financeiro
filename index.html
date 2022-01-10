@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controle Financeiro</title>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Controle Financeiro</h1>
-    <div>
-      <button>Cadastro de transações</button>
-      <button>Limpar dados</button>
-      <button>Configurações</button>
-      
+  <section>
+    <div class="menu-container">
+      <div class="logo">
+        <h1>Controle Financeiro</h1>
+      </div>
+      <div class="menu">
+        <button>Cadastro de transações</button>
+        <button>Limpar dados</button>
+        <button>Configurações</button>
+      </div>
+      <div>
+  </section>
+
+  <section>
+    <div class="trans-container">
+      <h2>Nova Transação</h2>
+      <form action="">
+        <label for="transacao">Tipo de Transação</label>
+        <input name="transacao" id="transacao" type="text" placeholder="Compra">
+
+        <label for="mercadoria">Nome da Mercadoria</label>
+        <input name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
+
+        <label for="valor">Valor</label>
+        <input name="valor" id="valor" type="text" placeholder="R$ 0,00">
+
+        <input type="submit" value="Adicionar Transação">
+      </form>
     </div>
-  <div>
+  </section>
+
+  <section>
+    <table>
+      <tr>
+        <th>Mercadoria</th>
+        <th>Valor</th>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet consectetur</td>
+        <td>R$ 12.999,99</td>
+      </tr>
+
+      <tr>
+        <td>Quis nostrud exercitation</td>
+        <td>R$ 99,99</td>
+      </tr>
+
+      <tr>
+        <td>Lorem ipsum </td>
+        <td>R$ 9,99</td>
+      </tr>
+
+      <tr>
+        <th>Total</th>
+        <th>R$ 12.909,99</th>
+      </tr>
+
+    </table>
+
+  </section>
+
+
+  <!-- <div class="extrato-container">
+        <h3>Extrato de transações</h3>
+
+        <div class="mercadoria">
+          <p>Mercadoria</p>
+          <span>Lorem ipsum dolor sit amet consectetur</span>
+          <span>Quis nostrud exercitation</span>
+          <span>Lorem ipsum </span>
+        </div>
+
+        <div class="valor">
+          <p>Valor</p>
+          <span>R$ 12.999,99</span>
+          <span>R$ 99,99</span>
+          <span>R$ 9,99</span>
+        </div> -->
+
+  </div>
 </body>
+
 </html>
