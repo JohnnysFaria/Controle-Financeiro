@@ -13,44 +13,46 @@
 </head>
 
 <body>
-  <section>
-    <header class="menu-container">
+  <section class="menu-container">
+    <header class="container">
       <div class="logo">
         <img src="./img/logo.svg" alt="">
         <h1>Controle Financeiro</h1>
       </div>
-      <button data-menu='button'></button>
-      <div class="menu">
-        <ul>
-          <li>
-            <a>Cadastro de transações</a>
-          </li>
-          <li>
-            <a>Limpar dados</a>
-          </li>
-          <li>
-            <a>Configurações</a>
-          </li>
-        </ul>
-      </div>
+
+      <input id='menu-burg' type="checkbox">
+      <label for="menu-burg">
+        <div class="burg"></div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a>Limpar dados</a>
+            </li>
+            <li>
+              <a>Cadastro de transações</a>
+            </li>
+          </ul>
+        </div>
+      </label>
     </header>
   </section>
 
-  <section class="position">
+  <section class="container">
     <div class="trans-container">
       <h2>Nova Transação</h2>
       <form class="form">
-        <div>
+        <div class='grow1'>
           <label for="transacao">Tipo de Transação</label>
           <input name="transacao" id="transacao" type="text" placeholder="Compra">
         </div>
 
-        <div>
+        <div class="grow2">
           <label for="mercadoria">Nome da Mercadoria</label>
           <input name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
         </div>
 
-        <div>
+        <div class='grow1'>
           <label for="valor">Valor</label>
           <input name="valor" id="valor" type="text" placeholder="R$ 0,00">
         </div>

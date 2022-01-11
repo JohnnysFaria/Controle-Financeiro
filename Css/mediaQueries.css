@@ -1,0 +1,63 @@
+@media (max-width: 1200px) {
+  .tabela {
+    margin-left: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .trans-container {
+    margin: 30px 20px 0px 25px;
+    width: 800px;
+    height: 190px;
+}
+
+  .trans-container h2 {
+    font-size: 18px;
+}
+.form {
+  flex-direction: row;
+}
+.form input {
+  width: 80%;
+}
+.grow1 input {
+  display: flex;
+	flex-grow: 1;
+  margin-top: 10px;
+}
+.grow2 input {
+  width: 300px;
+  display: flex;
+  flex-grow: 2;
+  margin-top: 10px;
+}
+.form button {
+  position: absolute;
+  top: 31%;
+  left: 65%;
+  width: 200px;
+}
+}
+
+@media (max-width: 768px) {
+
+.tabela {
+  margin-left: 0px;
+  margin: 10px
+}
+.tabela::before{
+  content: '';
+  width: 400px;
+  height: 2px;
+  background: #979797;
+}
+}
+

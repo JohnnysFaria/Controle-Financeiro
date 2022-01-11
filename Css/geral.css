@@ -16,7 +16,9 @@ Button {
   border: none;
 }
 
-.position {
+.container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -26,6 +28,9 @@ Button {
   height: 80px;
   display: flex;
   justify-content: space-around;
+}
+#menu-burg {
+  display: none;
 }
 
 .logo {
@@ -42,10 +47,10 @@ Button {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   color: #333333;
-  width: 450px;
+  width: 375px;
   height: 40px;
   background: #FFFFFf;
-  margin: 20px 45px 0px 0px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -71,14 +76,6 @@ Button {
   width: 2px;
   background: #979797;
 }
-.menu :nth-child(2)::after {
-  content: '';
-  display: inline-block;
-  margin-left: 7px;
-  height: 20px;
-  width: 2px;
-  background: #979797;
-}
 
 .trans-container {
   font-family: 'Lato', sans-serif;
@@ -90,7 +87,7 @@ Button {
   background: #FFFFFF;
   border: 1px solid #979797;
   border-radius: 4px;
-  margin: 30px 20px 0px 160px;
+  margin-top: 30px;
 }
 
 .form {
@@ -122,12 +119,13 @@ Button {
 }
 
 .tabela {
+  width: 100%;
+  margin-left: 20px ;
   display: flex;
-    background: #FFFFFF;
-    margin-right: 200px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .tabela h3 {
@@ -160,44 +158,5 @@ Button {
   width: 100%;
   border-top: 1px solid #979797;
   margin-top: 2px;
-}
-
-@media (max-width: 992px) {
-  .trans-container {
-    margin: 30px 20px 0px 25px;
-}
-
-}
-
-@media (max-width: 768px) {
-  .position {
-    flex-direction: column;
-}
-.trans-container {
-  width: 728px;
-  height: 189px;
-}
-
-.trans-container h2 {
-font-size: 18px;
-}
-
-.form {
-  flex-direction: row;
-}
-.form input {
-  width: 200px;
-}
-.form button {
-  position: absolute;
-  top: 41%;
-  left: 67%;
-  width: 200px;
-}
-
-.tabela {
-  margin-left: 0px;
-  margin: 10px
-}
 }
 
