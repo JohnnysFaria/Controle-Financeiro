@@ -69,3 +69,8 @@
   }
 }
  
+@media (max-width: 700px) {
+  input:checked ~ label .burg {
+    margin: 20px 0;
+}
+}
