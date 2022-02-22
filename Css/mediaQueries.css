@@ -11,50 +11,51 @@
 @media (max-width: 992px) {
   .container {
     width: 90%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
   }
   .trans-container {
-    
     width: 800px;
     height: 190px;
-}
-
+  }
   .trans-container h2 {
     font-size: 18px;
-}
-.form {
-  flex-direction: row;
-}
-.form input {
-  width: 80%;
-}
-.grow1 input {
-  display: flex;
-	flex-grow: 1;
-  margin-top: 10px;
-}
-.grow2 input {
-  width: 300px;
-  display: flex;
-  flex-grow: 2;
-  margin-top: 10px;
-}
-.form button {
-  position: absolute;
-  top: 44%;
-  left: 64%;
-  width: 200px;
-}
+  }
+  .form {
+    flex-direction: row;
+  }
+  .form input {
+    width: 80%;
+  }
+  .grow1 input {
+    display: flex;
+	  flex-grow: 1;
+    margin-top: 10px;
+  }
+  .grow2 input {
+    width: 300px;
+    display: flex;
+    flex-grow: 2;
+    margin-top: 10px;
+  }
+  .form button {
+    position: absolute;
+    top: 44%;
+    left: 64%;
+    width: 200px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
 .tabela {
   margin-left: 0px;
   margin: 10px
 }
-.logo h1 {
-  margin-left: 160px;
+h1 {
+  display: block;
+  text-align: center;
 }
 }
 

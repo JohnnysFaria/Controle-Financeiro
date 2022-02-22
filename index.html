@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./Css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
   <title>Controle Financeiro</title>
 </head>
 
@@ -17,8 +17,8 @@
     <header class="container">
       <div class="logo">
         <img src="./img/logo.svg" alt="">
-        <h1>Controle Financeiro</h1>
       </div>
+      <h1>Controle Financeiro</h1>
 
       <input id='menu-burg' type="checkbox">
       <label for="menu-burg">
@@ -44,17 +44,17 @@
       <form class="form">
         <div class='grow1'>
           <label for="transacao">Tipo de Transação</label>
-          <input name="transacao" id="transacao" type="text" placeholder="Compra">
+          <input required name="transacao" id="transacao" type="text" placeholder="Compra">
         </div>
 
         <div class="grow2">
           <label for="mercadoria">Nome da Mercadoria</label>
-          <input name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
+          <input required name="mercadoria" id="mercadoria" type="text" placeholder="Insira um nome">
         </div>
 
         <div class='grow1'>
           <label for="valor">Valor</label>
-          <input name="valor" id="valor" type="text" placeholder="R$ 0,00">
+          <input required name="valor" id="valor" type="text" placeholder="R$ 0,00">
         </div>
 
         <button type="submit">Adicionar Transação</button>
@@ -92,34 +92,8 @@
       </div>
 
   </section>
+  <script src="./js/script.js"> </script>
 
-  <!-- <table>
-        <h3>Extrato de transações</h3>
-        <tr>
-          <th>Mercadoria</th>
-          <th>Valor</th>
-        </tr>
-        <tr>
-          <td>+ Lorem ipsum dolor sit amet consectetur</td>
-          <td>R$ 12.999,99</td>
-        </tr>
-
-        <tr>
-          <td>Quis nostrud exercitation</td>
-          <td>R$ 99,99</td>
-        </tr>
-
-        <tr>
-          <td>Lorem ipsum </td>
-          <td>R$ 9,99</td>
-        </tr>
-
-        <tr>
-          <th>Total</th>
-          <th>R$ 12.909,99</th>
-        </tr>
-
-      </table> -->
 </body>
 
 </html>

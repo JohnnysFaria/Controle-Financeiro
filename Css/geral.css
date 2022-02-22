@@ -20,14 +20,13 @@ Button {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  text-align: none;
 }
 .menu-container {
   background: #E0E0E0;
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-around;
 }
 #menu-burg {
   display: none;
@@ -38,8 +37,11 @@ Button {
   align-items: center;
 }
 
-.logo h1 {
-  padding-left: 20px;
+h1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 15px;
 }
 
 .menu {
